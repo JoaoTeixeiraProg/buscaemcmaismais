@@ -9,6 +9,7 @@ private:
     int mE; //missionario margem esquerda
     int cE; //canibais margem esquerda
     char barco; //onde barco esta
+    bool ePermitido(int mE, int cE, int mD, int cD, char barco);
    
 public:
     EstadoMC(int mE, int cE, int mD, int cD, char barco);
