@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 	stack <No *> pilha;
 	
-	Estado * inicial; // Não tem implementação ainda...
+	Estado * inicial = new EstadoMC(3,3,0,0,'e');
 	
 	No * atual = new No(inicial);
 	
