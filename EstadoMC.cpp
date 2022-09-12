@@ -16,6 +16,14 @@ bool EstadoMC::eObjetivo(){
            this->barco == 'd';
 }
 
+bool EstadoMC::bool ePermitido(int mE, int cE, int mD, int cD, char barco){
+    if(barco == this -> barco)
+        return false;
+    
+    return (mE >= cE || (mE == 0 && cE > 0)) && (mD >= cD || (mD == 0 && cD > 0 ));
+    
+}
+
 list<Estado *> EstadoMC::expandir(){
     return NULL;
 }
