@@ -10,6 +10,7 @@ private:
     int cE; //canibais margem esquerda
     char barco; //onde barco esta
     bool ePermitido(int mE, int cE, int mD, int cD, char barco);
+    Estado * levar2Missionarios();
    
 public:
     EstadoMC(int mE, int cE, int mD, int cD, char barco);
