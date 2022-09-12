@@ -33,10 +33,7 @@ Estado * EstadoMC::levar2Missionarios(){
         if(this -> ePermitido(this -> mE + 2, this -> cE, this -> mD - 2, this -> cD, 'e')){
             return new EstadoMC(this -> ePermitido(this -> mE + 2, this -> cE, this -> mD - 2, this -> cD, 'e');
         }
-        
     }
-    
-    
 }
 
 list<Estado *> EstadoMC::expandir(){
